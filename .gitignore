@@ -1,0 +1,30 @@
+# Node / Next.js
+web/node_modules/
+web/.next/
+web/out/
+web/*.log
+
+# .NET
+**/bin/
+**/obj/
+backend/.vs/
+backend/TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Flutter / Dart
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/generated/
+
+# OS / Editor
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+.DS_Store

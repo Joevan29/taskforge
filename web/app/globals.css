@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --indigo-400: #818cf8;
+  --indigo-500: #6366f1;
+  --indigo-600: #4f46e5;
+  --zinc-950: #09090b;
+  --zinc-900: #18181b;
+  --zinc-800: #27272a;
+  --zinc-700: #3f3f46;
+  --zinc-500: #71717a;
+  --zinc-400: #a1a1aa;
+  --emerald-500: #10b981;
+  --amber-500: #f59e0b;
+  --red-500: #ef4444;
+  --blue-500: #3b82f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--zinc-700);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--zinc-500);
+}
+
+/* Hidden scrollbar */
+.scroll-hidden::-webkit-scrollbar { display: none; }
+.scroll-hidden { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Glassmorphism */
+.glass {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.dark .glass {
+  background-color: rgba(24, 24, 27, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Bento Card Glow */
+.bento-glow {
+  box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.02);
+}
+.dark .bento-glow {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* SignalR Pulse Animation */
+@keyframes pulse-glow {
+  0%, 100% { border-color: rgba(129, 140, 248, 0.3); }
+  50% {
+    border-color: rgba(129, 140, 248, 1);
+    box-shadow: 0 0 15px rgba(129, 140, 248, 0.2);
+  }
+}
+.signalr-pulse {
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+/* Kanban drag styles */
+.task-card-dragging {
+  opacity: 0.5;
+  transform: rotate(2deg);
+  cursor: grabbing !important;
+}
+.kanban-col-drag-over {
+  background-color: rgba(99, 102, 241, 0.05);
+  border-color: rgba(99, 102, 241, 0.4) !important;
+}
+
+/* Priority badge colors */
+.priority-urgent { @apply bg-red-500/10 text-red-500 border-red-500/20; }
+.priority-high   { @apply bg-orange-500/10 text-orange-500 border-orange-500/20; }
+.priority-medium { @apply bg-amber-500/10 text-amber-500 border-amber-500/20; }
+.priority-low    { @apply bg-slate-500/10 text-slate-500 border-slate-500/20; }
+
+/* Font weight utilities */
+.font-black-custom { font-weight: 900; }
+
+/* Animated gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #818cf8, #6366f1, #4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
