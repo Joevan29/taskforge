@@ -78,7 +78,7 @@ export default function LoginPage() {
               Unite,<br />Manage,<br />and Succeed.
             </h1>
             <p className="text-zinc-400 text-sm max-w-sm font-medium leading-relaxed">
-              Kolaborasikan tim kantor dan teknisi lapangan Anda secara real-time dalam satu ekosistem premium.
+              Kolaborasikan tim kantor dan teknisi lapangan Anda secara real-time dalam satu ekosistem TaskForge.
             </p>
 
             {/* Terminal Mockup */}
@@ -90,16 +90,16 @@ export default function LoginPage() {
               </div>
               <div className="flex items-center gap-2 mb-2">
                 <Terminal className="w-3 h-3 text-zinc-500" />
-                <span className="text-[10px] text-zinc-500 font-mono">taskforge-api</span>
+                <span className="text-[10px] text-zinc-500 font-mono">TaskForge</span>
               </div>
               <div className="text-[10px] space-y-1.5 font-mono overflow-hidden">
                 <div className="flex justify-between">
-                  <span className="text-indigo-400">$ dotnet run</span>
+                  <span className="text-indigo-400">$ Manage your work</span>
                   <span className="text-emerald-500">Success</span>
                 </div>
-                <div className="text-zinc-500">&gt; [SignalR] Hub connected :5001</div>
-                <div className="text-zinc-400">&gt; [PostgreSQL] Database online: 8ms</div>
-                <div className="text-zinc-400">&gt; Workspace &quot;ShieldSafe&quot; loaded</div>
+                <div className="text-zinc-500">&gt; Mempermudah komunikasimu dengan User</div>
+                <div className="text-zinc-400">&gt; Mempermudah kolaborasi dengan tim</div>
+                <div className="text-zinc-400">&gt; Mempermudah manajemen proyek dengan adanya &quot;TaskForge&quot;</div>
               </div>
             </div>
           </div>

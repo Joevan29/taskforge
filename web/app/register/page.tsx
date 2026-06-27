@@ -6,8 +6,7 @@ import Link from "next/link";
 import { ArrowRight, Check, Blocks } from "lucide-react";
 
 const FEATURES = [
-  "Real-time collaboration via SignalR",
-  "Bento-grid dashboard premium",
+  "Real-time collaboration",
   "Multi-role team management",
   "Offline support untuk tim lapangan",
 ];
